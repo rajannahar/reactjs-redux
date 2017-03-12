@@ -1,8 +1,12 @@
 export function addNumber(number) {
-	return {
-		type: "ADD", 
-		payload: number
-	};
+	return dispatch => {
+		setTimeout(() => {
+			dispatch({
+				type: "SET_NAME", 
+				payload: text
+			});
+		}, 2000);
+	}
 }
 
 
